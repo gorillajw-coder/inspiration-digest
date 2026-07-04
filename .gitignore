@@ -1,0 +1,11 @@
+# 비밀 값 — 절대 커밋 금지 (~/.claude/.env 공유 사용, 이 프로젝트 안엔 안 둠)
+.env
+
+# 실행 상태 — 재실행하면 다시 쌓이는 값이라 커밋 불필요
+seen.db
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
