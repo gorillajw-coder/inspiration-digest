@@ -36,7 +36,8 @@ DOW   = NOW.weekday()  # 0=월 2=수 4=금
 
 LOG_DIR = Path.home() / ".claude" / "overseer-log"
 LOG_DIR.mkdir(parents=True, exist_ok=True)
-DB_PATH = Path.home() / "projects" / "daily-digest" / "seen.db"
+# 프로젝트 루트의 seen.db (예전 daily-digest 경로 버그 수정)
+DB_PATH = Path(__file__).resolve().parent / "seen.db"
 
 # ── 로그 ───────────────────────────────────────────────────────
 def log(msg):
